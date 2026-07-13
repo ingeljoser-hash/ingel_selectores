@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Aquí van los estilos del header */
+.header {
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+}
+.header__nav {
+  text-align: end;
+  line-height: 50px;
+}
+.header__link {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  padding: 5px 10px;
+  transition: all 400ms ease;
+}
+.header__link:hover {
+  background-color: red;
+}
+
+/* Estilos para el contenido principal */
+ .image {
+  width: 100%;
+  height: 100%;
+} 
+.banner,
+.banner-inicio,
+.banner-selecciones {
+  background-image: url("../img/imagen_copa.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-inicio {
+  background-image: url("../img/argentina_vigente.jpg");
+}
+
+.banner-partidos {
+  background-image: url("../img/6.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  
+  /* Aquí está la magia: cambia height por min-height */
+  min-height: 100vh; 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 60px; /* Espacio al final para que el último jugador no toque el borde del navegador */
+}
+
+.banner-selecciones {
+  background-image: url("../img/3.avif");
+}
+
+.titulo1,
+.titulo3 {
+  color: white;
+}
+
+.titulo2 {
+  color: green;
+}
+
+section h2 {
+  color: white;
+}
+
+
+#introduccion {
+  color: green;
+} 
+
+section p {
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  width: 100%;       /* Ocupa el 70% del ancho */
+  padding: 5px;    /* Espacio interno */
+}
+
+section p + p {
+  font-size: 20px;
+  color: green;
+  width: 85%;       /* Ocupa el 70% del ancho */
+  padding: 5px;    /* Espacio interno */
+}
+
+.img-messi {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; /* Esto empuja la imagen hacia abajo para acomodarla en el lugar real del estadio */
+}
+
+.banner-partidos h3 { 
+ font-size: 20px;
+  color: #ffffff;
+  width: 100%;       /* Ocupa el 70% del ancho */
+  padding: 5px
+
+}
